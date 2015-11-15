@@ -59,26 +59,26 @@ window.onload = function() {
 
     // ignore if on home page
     // if(document.location.pathname.length < 2){
-    //     // implement share js
-    //     sharejs.open(document.location.pathname, 'text', function(error, doc) {
-    //         // doc.attach_textarea(pad);
-    //         doc.attachTextarea(pad);
-    //         convertTextAreaToMarkdown();
-    //     });        
+        // implement share js
+        sharejs.open(document.location.pathname, 'text', function(error, doc) {
+            // doc.attach_textarea(pad);
+            doc.attachTextarea(pad);
+            convertTextAreaToMarkdown();
+        });        
     // }
-    var doc = sjs.get('docs', document.location.pathname);
+    // var doc = sjs.get('docs', document.location.pathname);
 
-    // Subscribe to changes
-    doc.subscribe();
+    // // Subscribe to changes
+    // doc.subscribe();
 
-    // This will be called when we have a live copy of the server's data.
-    doc.whenReady(function() {
-      console.log('doc ready, data: ', doc.getSnapshot());
+    // // This will be called when we have a live copy of the server's data.
+    // doc.whenReady(function() {
+    //   console.log('doc ready, data: ', doc.getSnapshot());
 
-      // Create a JSON document with value x:5
-      if (!doc.type) doc.create('text');
-      doc.attachTextarea(pad);
-    });
+    //   // Create a JSON document with value x:5
+    //   if (!doc.type) doc.create('text');
+    //   doc.attachTextarea(pad);
+    // });
 
     // convert on page load
     convertTextAreaToMarkdown();
