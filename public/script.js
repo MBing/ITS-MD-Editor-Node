@@ -61,8 +61,8 @@ window.onload = function() {
     // if(document.location.pathname.length < 2){
         // implement share js
         sharejs.open(document.location.pathname, 'text', function(error, doc) {
-            // doc.attach_textarea(pad);
-            doc.attachTextarea(pad);
+            doc.attach_textarea(pad);
+            // doc.attachTextarea(pad);
             convertTextAreaToMarkdown();
         });        
     // }
