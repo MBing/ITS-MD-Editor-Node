@@ -3,21 +3,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Realtime Markdown Viewer</title>
+    <title>Intersentia Software Markdown Editor</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 
 <body class="container-fluid">
-
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            ITS-Markdown
+          </a>
+        </div>
+      </div>
+    </nav>
     <section class="row">
         <textarea class="col-md-6 full-height" id="pad">
-# Your Markdown Content Here
+# Kop 1
+## Kop 2
+### Kop 3
+...
 
-* List Item 1
-* List Item 2
-* List Item 3
-* List Item 4
+## Lijsten
+
+* Lijst Item 1
+* Lijst Item 2
+    * Lijst Item 2.1
+* Lijst Item 3
+
+1. Nummerlijst Item 1
+2. Nummerlijst Item 1
+    2.1 Nummerlijst Item 2.1
+3. Nummerlijst Item 1
+
+## Types Tekst
+
+**Bold**
+*Cursief*
+
+
+## Links
+[URL Naam](http://google.com)
+![Afbeelding Alt Text](http://fillmurray.com/200/250 "Optionele Titel")
+<email@adres.com>
+
+
+## Horizontale lijn
+
+---------------------------
+
+## Escape karakters
+
+\ Backslash om letterlijke tekens weer te geven zoals \*
+` Backticks om code te tonen zoals `<code>`
+
+### Rekening houden bij weergave van volgende karakters. Merk de backslash op bij ieder teken om dit te escapen.
+
+\\   backslash
+\`   backtick
+\*   asterisk
+\_   underscore
+\{\}  curly braces
+\[\]  square brackets
+\(\)  parentheses
+\#   hash mark
+\+   plus sign
+\-   minus sign (hyphen)
+\.   dot
+\!   exclamation mark
+
         </textarea>
         <div class="col-md-6 full-height" id="markdown"></div>
     </section>
