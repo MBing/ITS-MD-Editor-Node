@@ -33,6 +33,19 @@ window.onload = function() {
         document.getElementById('name').textContent = profile.name;
       });
     }
+    var getFoos = fetch('/', {
+      headers: {
+        'Authorization': 'Bearer ' + localStorage.getItem('id_token')
+      },
+      method: 'GET',
+      cache: false
+    });
+
+    getFoos.then(function (response) {
+      response.json().then(function (foos) {
+        console.log('the foos:', foos);
+      });
+    });
     /* END OF AUTH STUFF */
 
     // make the tab act like a tab

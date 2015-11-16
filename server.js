@@ -4,10 +4,10 @@ var express = require('express');
 var app = express();
 var jwt = require('express-jwt');
 
-var jwtCheck = jwt({
-  secret: new Buffer('8BBYKrEsruFaQz6imGZ8p9NX2Z1zkfX7nHtahx908JRqLCMQfbD-1C-d83g2-Ej0', 'base64'),
-  audience: 'VZNkO2UEcWKgJmMQGjpb03WBzKq9SwCa'
-});
+// var jwtCheck = jwt({
+//   secret: new Buffer('8BBYKrEsruFaQz6imGZ8p9NX2Z1zkfX7nHtahx908JRqLCMQfbD-1C-d83g2-Ej0', 'base64'),
+//   audience: 'VZNkO2UEcWKgJmMQGjpb03WBzKq9SwCa'
+// });
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
