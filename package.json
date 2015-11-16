@@ -14,8 +14,9 @@
   ],
   "author": "MBing",
   "dependencies": {
-    "express": "^4.12.4",
     "ejs": "^2.3.1",
+    "express": "^4.12.4",
+    "express-jwt": "^3.3.0",
     "redis": "^0.10.3",
     "share": "0.6.3"
   },
