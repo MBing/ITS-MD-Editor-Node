@@ -1,13 +1,15 @@
 /* public/style.css */
 
-html, body, section, .full-height {
-    height: 100%;
+html, body, section, 
+.full-height, 
+.main {
+    height: 100vh;
     /*padding-top: 70px;*/
 } 
 
+
 #pad{
     font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
-
     border: none;
     overflow: auto;
     outline: none;
@@ -104,24 +106,4 @@ body {
 }
 .main .page-header {
   margin-top: 0;
-}
-
-
-/*
- * Placeholder dashboard ideas
- */
-
-.placeholders {
-  margin-bottom: 30px;
-  text-align: center;
-}
-.placeholders h4 {
-  margin-bottom: 0;
-}
-.placeholder {
-  margin-bottom: 20px;
-}
-.placeholder img {
-  display: inline-block;
-  border-radius: 50%;
 }
