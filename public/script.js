@@ -73,7 +73,7 @@ window.onload = function() {
 $('.nav.nav-sidebar').on('click', 'li', function () {
     $('.active').removeClass('active');
     $(this).addClass('active');
-})
+});
 /*!
  * IE10 viewport hack for Surface/desktop Windows 8 bug
  * Copyright 2014-2015 Twitter, Inc.
