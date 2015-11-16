@@ -12,7 +12,7 @@ var jwt = require('express-jwt');
 app.set('view engine', 'ejs');
 
 // public folder to store assets
-app.use(express.static(__dirname + '/public'), jwtCheck);
+app.use(express.static(__dirname + '/public'));
 // app.use('/api/path-you-want-to-protect', jwtCheck);
 
 // routes for app
